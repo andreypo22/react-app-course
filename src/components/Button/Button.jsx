@@ -7,7 +7,7 @@ const inlineStyles = {
 
 const isPrimary = true;
 
-const Button = (props) => {
+export const Button = (props) => {
   return (
     <div>
       <button

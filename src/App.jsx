@@ -1,8 +1,18 @@
-import MainLayout from "./components/MainLayout/MainLayout";
-import Button from "./components/Button/Button";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { MainLayout } from "./components/MainLayout";
 
 function App() {
-  return;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<div>home</div>} />
+          <Route path="/forbidden" element={<div>forbidden</div>} />
+          <Route path="/addquestion" element={<div>add question</div>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
