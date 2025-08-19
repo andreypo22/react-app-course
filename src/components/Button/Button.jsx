@@ -1,24 +1,15 @@
-import React from "react";
 import cls from "./Button.module.css";
 
-const inlineStyles = {
-  color: "black",
-};
-
-const isPrimary = true;
-
-export const Button = (props) => {
+export const Button = ({ onClick, isActive, isDisabled, children }) => {
   return (
-    <div>
-      <button
-        className={isPrimary ? cls.primary : cls.btn}
-        style={inlineStyles}
-        onClick={props.onClick}
-      >
-        {props.children}
-      </button>
-    </div>
+    <button
+      className={`${cls.btn} ${isActive ? cls.active : ""}`}
+      disabled={isDisabled}
+      onClick={onClick}
+    >
+      {children}
+    </button>
   );
 };
 
-export default Button;
+// export default Button;
