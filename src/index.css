@@ -1,8 +1,10 @@
 :root {
   --main-bg-color: #23272f;
   --text-color: #fff;
-  --btn-bg-color: #383b3f;
-  --btn-text-color: #fff;
+  /* --btn-bg-color: #383b3f;
+  --btn-text-color: #fff; */
+  --btn-bg-color: #16444f;
+  --btn-text-color: #57c4dc;
   --card-bg-color: #343a46;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -37,8 +39,8 @@ body {
   :root {
     --main-bg-color: #fff;
     --text-color: #000;
-    --btn-bg-color: #16444f;
-    --btn-text-color: #57c4dc;
+    /* --btn-bg-color: #383b3f;
+    --btn-text-color: #fff; */
     --card-bg-color: #ebedf0;
   }
 }
@@ -47,8 +49,8 @@ body {
   :root {
     --main-bg-color: #23272f;
     --text-color: #fff;
-    --btn-bg-color: #383b3f;
-    --btn-text-color: #fff;
+    /* --btn-bg-color: #16444f;
+    --btn-text-color: #57c4dc; */
     --card-bg-color: #343a46;
   }
 }

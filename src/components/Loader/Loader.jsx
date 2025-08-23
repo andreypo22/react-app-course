@@ -8,4 +8,8 @@ export const Loader = () => {
   );
 };
 
+export const SmallLoader = () => {
+  return <span className={cls.smallLoader}></span>;
+};
+
 // export default Loader
