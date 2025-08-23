@@ -8,18 +8,6 @@ import { useFetch } from "../../hooks/useFetch";
 import { API_URL } from "../../constants";
 import { Loader, SmallLoader } from "../../components/Loader";
 
-// const card = {
-//   id: "1",
-//   question: "Что такое React?",
-//   answer: "React — это библиотека для создания пользовательских интерфейсов.",
-//   description:
-//     "React — это JavaScript-библиотека, разработанная Facebook, которая используется для построения UI с компонентным подходом. React позволяет вам создавать пользовательские интерфейсы из отдельных частей, называемых компонентами.",
-//   resources: ["https://react.dev", "https://react.dev/reference/react"],
-//   level: 1,
-//   completed: true,
-//   editDate: "03.02.2025, 19:49",
-// };
-
 export const QuestionPage = () => {
   const checkboxId = useId();
   const navigate = useNavigate();
