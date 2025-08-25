@@ -13,8 +13,6 @@ export const EditQuestionPage = () => {
     const response = await fetch(`${API_URL}/react/${id}`);
     const data = await response.json();
 
-    console.log(data);
-
     setQuestion(data);
   });
 

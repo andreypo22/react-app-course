@@ -7,8 +7,6 @@ export const QuestionForm = ({
   isPending,
   submitBtnText,
 }) => {
-  console.log(state.resources);
-
   return (
     <form action={formAction} className={cls.form}>
       <input type="text" name="questionId" defaultValue={state.id} hidden />
