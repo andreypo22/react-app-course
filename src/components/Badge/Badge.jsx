@@ -14,5 +14,3 @@ export const Badge = ({ variant, children }) => {
       return <div className={cls.badge}>{children}</div>;
   }
 };
-
-// export default Badge

@@ -1,8 +1,7 @@
+import cls from "./QuestionPage.module.css";
 import { useEffect, useId, useState } from "react";
 import { Badge } from "../../components/Badge";
 import { Button } from "../../components/Button";
-import cls from "./QuestionPage.module.css";
-
 import { useNavigate, useParams } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 import { API_URL } from "../../constants";
@@ -112,5 +111,3 @@ export const QuestionPage = () => {
     </>
   );
 };
-
-// export default QuestionPage

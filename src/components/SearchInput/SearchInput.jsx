@@ -1,5 +1,5 @@
-import { useId } from "react";
 import cls from "./SearchInput.module.css";
+import { useId } from "react";
 import { SearchIcon } from "../icons";
 
 export const SearchInput = ({ value, onChange }) => {
@@ -21,5 +21,3 @@ export const SearchInput = ({ value, onChange }) => {
     </div>
   );
 };
-
-// export default SearchInput

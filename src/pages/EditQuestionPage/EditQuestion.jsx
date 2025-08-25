@@ -1,5 +1,5 @@
-import { useActionState } from "react";
 import cls from "./EditQuestionPage.module.css";
+import { useActionState } from "react";
 import { Loader } from "../../components/Loader";
 import { QuestionForm } from "../../components/QuestionForm";
 import { delayFn } from "../../helpers/delayFn";
@@ -90,5 +90,3 @@ export const EditQuestion = ({ initialState = {} }) => {
     </>
   );
 };
-
-// export default EditQuestion

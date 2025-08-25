@@ -1,5 +1,5 @@
-import { Button } from "../Button";
 import cls from "./QuestionForm.module.css";
+import { Button } from "../Button";
 
 export const QuestionForm = ({
   formAction,
@@ -82,5 +82,3 @@ export const QuestionForm = ({
     </form>
   );
 };
-
-// export default QuestionForm

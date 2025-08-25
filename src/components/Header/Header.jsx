@@ -1,7 +1,6 @@
-import { Button } from "../Button";
 import cls from "./Header.module.css";
+import { Button } from "../Button";
 import reactLogo from "../../assets/react.svg";
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
@@ -20,5 +19,3 @@ export const Header = () => {
     </header>
   );
 };
-
-// export default Header

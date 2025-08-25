@@ -11,5 +11,3 @@ export const Button = ({ onClick, isActive, isDisabled, children }) => {
     </button>
   );
 };
-
-// export default Button;

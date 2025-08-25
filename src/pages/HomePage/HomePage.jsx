@@ -1,10 +1,9 @@
+import cls from "./HomePage.module.css";
 import { useState, useEffect, useMemo, useRef } from "react";
-
 import { API_URL } from "../../constants";
 import { QuestionCardList } from "../../components/QuestionCardList";
 import { Loader } from "../../components/Loader";
 import { useFetch } from "../../hooks/useFetch";
-import cls from "./HomePage.module.css";
 import { SearchInput } from "../../components/SearchInput";
 import { Button } from "../../components/Button";
 
@@ -55,7 +54,6 @@ export const HomePage = () => {
 
   useEffect(() => {
     getQuestions(`react${searchParams}`);
-    // getQuestions(`react`);
   }, [searchParams]);
 
   const onSearchChangeHandler = (e) => {
@@ -136,5 +134,3 @@ export const HomePage = () => {
     </>
   );
 };
-
-// export default HomePage
