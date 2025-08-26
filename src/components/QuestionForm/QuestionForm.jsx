@@ -60,7 +60,7 @@ export const QuestionForm = ({
       </div>
       <div className={cls.formControl}>
         <label htmlFor="levelField">Level: </label>
-        <select name="level" id="levelField">
+        <select name="level" id="levelField" defaultValue={state.level}>
           <option disabled>Question level</option>
           <hr />
           <option value="1">1 - easiest</option>

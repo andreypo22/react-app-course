@@ -12,7 +12,6 @@ export const EditQuestionPage = () => {
   const [fetchQuestion, isQuestionLoading] = useFetch(async () => {
     const response = await fetch(`${API_URL}/react/${id}`);
     const data = await response.json();
-
     setQuestion(data);
   });
 
