@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 import { AUTH_STORAGE } from "../../constants";
 
-export const AuthContext = createContext(null);
+const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const isLogin = JSON.parse(localStorage.getItem(AUTH_STORAGE)) || false;
@@ -13,3 +13,5 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+
+export default AuthContext;
