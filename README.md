@@ -1,12 +1,32 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение с вопросами по React.
 
-Currently, two official plugins are available:
+В приложении реализованы:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- фильтрация по содержимому карточек вопросов
+- сортировка по уровню сложности (level 1 / 2 / 3) и завершенности (completed / not completed)
+- выбор количества карточек вопросов на странице
+- пагинация по страницам
+- возможность добавления, корректировки и удаления карточек вопросов (для этого необходимо авторизоваться, нажав кнопку Login)
+- переключатель темной / светлой темы
 
-## Expanding the ESLint configuration
+Технологии, используемые в проекте:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React hooks: useState, useEffect, useMemo, useRef, useId, createContext, useContext, useLayoutEffect
+- React-router-dom: BrowserRouter, Navigate, Outlet, Route, Routes, useLocation, useNavigate, useParams
+- Имитация запросов на сервер с искусственной задержкой и появлением "лоадера"
+- Хранение данных на локальном сервере (библиотека JSON server)
+- Кастомные хуки для получения данных с сервера, авторизации пользователя, изменения цветовой темы
+- React-toastify для отображения статуса добавления / удаления / корректировки карточек вопросов
+- Ленивая загрузка с помощью React lazy для страниц добавления / корректировки карточек вопросов
+- ProtectedRoutes для посещения страниц добавления / удаления / корректировки карточек вопросов только авторизованными пользователями
+- Хранение данных о выбранной цветовой теме и авторизации в Local storage
+- CSS модули для стилизации
+
+Запуск приложения:
+
+- склонировать репозиторий
+- перейти в ветку dev
+- установить зависимости "npm i"
+- запустить сервер и приложение локально "npm run server:app"
