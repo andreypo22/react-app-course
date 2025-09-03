@@ -62,7 +62,6 @@ export const HomePage = () => {
 
   const onSortSelectChangeHandler = (e) => {
     setSortSelectValue(e.target.value);
-
     setSearchParams(`?_page=1&_per_page=${countSelectValue}&${e.target.value}`);
   };
 
