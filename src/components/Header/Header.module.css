@@ -25,3 +25,13 @@
   align-items: center;
   gap: 10px;
 }
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    padding: 10px 20px;
+    height: 130px;
+  }
+}
